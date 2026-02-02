@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4urie | Portfolio</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- DevIcons -->
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="grid-bg"></div>
+
+    <!-- Header -->
+    <header class="site-header">
+        <div class="container header-inner">
+            <div class="logo pixel-font">4URIE</div>
+            <nav class="nav-links">
+                <a href="#about" data-i18n="nav.about">About</a>
+                <a href="#skills" data-i18n="nav.skills">Skills</a>
+                <a href="#certificates" data-i18n="nav.certificates">Certificates</a>
+                <a href="#projects" data-i18n="nav.projects">Projects</a>
+                <a href="#contact" data-i18n="nav.contact">Contact</a>
+            </nav>
+            <div class="header-actions">
+                <a href="https://github.com/4urie" target="_blank" aria-label="GitHub"><i data-lucide="github"></i></a>
+                <button id="theme-toggle" aria-label="Toggle theme">
+                    <i data-lucide="sun" class="sun-icon"></i>
+                    <i data-lucide="moon" class="moon-icon"></i>
+                </button>
+                <div class="lang-switcher">
+                    <button class="lang-badge pixel-font" id="lang-toggle">
+                        <span id="current-lang">EN</span>
+                        <i data-lucide="chevron-down" class="lang-arrow"></i>
+                    </button>
+                    <div class="lang-dropdown" id="lang-dropdown">
+                        <button class="lang-option" data-lang="en">EN - English</button>
+                        <button class="lang-option" data-lang="tl">TL - Tagalog</button>
+                        <button class="lang-option" data-lang="es">ES - Español</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero / Pixel Art Section -->
+        <section class="hero">
+            <div class="hero-robot">
+                <div class="robot-body">
+                    <div class="robot-head">
+                        <div class="robot-eye robot-eye-left"></div>
+                        <div class="robot-eye robot-eye-right"></div>
+                        <div class="robot-antenna"></div>
+                    </div>
+                    <div class="robot-torso"></div>
+                    <div class="robot-arm robot-arm-left"></div>
+                    <div class="robot-arm robot-arm-right"></div>
+                    <div class="robot-leg robot-leg-left"></div>
+                    <div class="robot-leg robot-leg-right"></div>
+                </div>
+            </div>
+            
+            <!-- Floating Elements -->
+        
+            
+            <div class="satellite satellite-1">
+                <div class="satellite-body"></div>
+                <div class="satellite-panel satellite-panel-left"></div>
+                <div class="satellite-panel satellite-panel-right"></div>
+            </div>
+            
+            <div class="satellite satellite-2">
+                <div class="satellite-body"></div>
+                <div class="satellite-panel satellite-panel-left"></div>
+                <div class="satellite-panel satellite-panel-right"></div>
+            </div>
+            
+            <div class="code-symbol symbol-1">&lt;/&gt;</div>
+            <div class="code-symbol symbol-2">{ }</div>
+            <div class="code-symbol symbol-3">AI</div>
+            
+            <div class="pixel-art-container">
+                <h1 class="pixel-text">Aurie Nellas</h1>
+            </div>
+        </section>
+
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="diagonal-bg"></div>
+            <div class="container profile-inner">
+                <div class="avatar-wrapper">
+                    <div class="avatar">
+                        <!-- Placeholder for profile image -->
+                        <img src="me (1).jpg" alt="4urie Avatar">
+                    </div>
+                </div>
+                <div class="profile-content">
+                    <div class="code-comment">// TODO: Something cool in here ;)</div>
+                    <h1 class="name">4urie</h1>
+                    <h2 class="role">Content Creator & AI Enthusiast</h2>
+                    <p class="tagline">Focused on <span id="rotating-text">web development</span>.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Info/Social Grid -->
+        <section class="info-bar">
+            <div class="container">
+                <div class="social-grid">
+                    <a href="https://github.com/4urie" target="_blank" class="social-card">
+                        <div class="social-icon"><i data-lucide="github"></i></div>
+                        <div class="social-text">
+                            <span class="social-label">GitHub</span>
+                            <span class="social-value">4urie</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+                    </a>
+                    <a href="https://www.facebook.com/4urie" target="_blank" class="social-card">
+                        <div class="social-icon"><i data-lucide="facebook"></i></div>
+                        <div class="social-text">
+                            <span class="social-label">Facebook</span>
+                            <span class="social-value">4urie</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+                    </a>
+                    <a href="mailto:nellasaurie5@gmail.com" class="social-card">
+                        <div class="social-icon"><i data-lucide="mail"></i></div>
+                        <div class="social-text">
+                            <span class="social-label">Email</span>
+                            <span class="social-value">nellasaurie5@gmail.com</span>
+                        </div>
+                        <i data-lucide="arrow-up-right" class="arrow-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2 class="section-title pixel-font" data-i18n="section.about">About</h2>
+                <div class="about-content">
+                    <p data-i18n="about.p1">I enjoy building practical web and mobile projects using modern tools and simple solutions. I work with technologies like Next.js, Flutter, and basic hardware platforms, and I like turning ideas into working systems.</p>
+                    <p data-i18n="about.p2">I also build AI automations to reduce repetitive tasks and improve workflows. Alongside development, I have experience in video editing, creating clean and engaging content for social media and online platforms.</p>
+                    <p data-i18n="about.p3">I focus on learning by building, experimenting with new tools, and creating real-world solutions that make everyday work easier.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title pixel-font" data-i18n="section.skills">Skills</h2>
+                <div class="skills-wrapper">
+                    <!-- Languages & Frameworks -->
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title" data-i18n="skills.webMobile">Web & Mobile</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item"><i class="devicon-html5-plain colored"></i> <span>HTML</span></div>
+                            <div class="skill-item"><i class="devicon-css3-plain colored"></i> <span>CSS</span></div>
+                            <div class="skill-item"><i class="devicon-javascript-plain colored"></i> <span>JavaScript</span></div>
+                            <div class="skill-item"><i class="devicon-typescript-plain colored"></i> <span>TypeScript</span></div>
+                            <div class="skill-item"><i class="devicon-java-plain colored"></i> <span>Java</span></div>
+                            <div class="skill-item"><i class="devicon-react-original colored"></i> <span>React</span></div>
+                            <div class="skill-item"><i class="devicon-nextjs-original-wordmark"></i> <span>Next.js</span></div>
+                            <div class="skill-item"><i class="devicon-flutter-plain colored"></i> <span>Flutter</span></div>
+                            <div class="skill-item"><i class="devicon-dart-plain colored"></i> <span>Dart</span></div>
+                            <div class="skill-item"><i class="devicon-python-plain colored"></i> <span>Python</span></div>
+                            <div class="skill-item"><i class="devicon-django-plain colored"></i> <span>Django</span></div>
+                            <div class="skill-item"><i class="devicon-laravel-original colored"></i> <span>Laravel</span></div>
+                            <div class="skill-item"><i class="devicon-mysql-plain colored"></i> <span>SQL</span></div>
+                            <div class="skill-item"><i class="devicon-supabase-plain colored"></i> <span>Supabase</span></div>
+                        </div>
+                    </div>
+
+                    <!-- Hardware & Tools -->
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title" data-i18n="skills.hardwareTools">Hardware & Tools</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item"><i class="devicon-ubuntu-plain colored"></i> <span>Ubuntu</span></div>
+                            <div class="skill-item"><i class="devicon-arduino-plain colored"></i> <span>Arduino</span></div>
+                            <div class="skill-item"><i class="devicon-linux-plain"></i> <span>Orange Pi</span></div>
+                            <div class="skill-item"><i data-lucide="network"></i> <span>Networking</span></div>
+                            <div class="skill-item"><i data-lucide="video"></i> <span>CapCut</span></div>
+                            <div class="skill-item"><i data-lucide="workflow"></i> <span>n8n</span></div>
+                            <div class="skill-item"><i data-lucide="zap"></i> <span>Antigravity</span></div>
+                            <div class="skill-item"><i class="devicon-figma-plain colored"></i> <span>Figma</span></div>
+                            <div class="skill-item"><i data-lucide="mouse-pointer-click"></i> <span>Cursor</span></div>
+                            <div class="skill-item"><i class="devicon-vscode-plain colored"></i> <span>VSCode</span></div>
+                            <div class="skill-item"><i class="devicon-canva-original colored"></i> <span>Canva</span></div>
+                            <div class="skill-item"><i class="devicon-photoshop-plain colored"></i> <span>Photoshop</span></div>
+                            <div class="skill-item"><i data-lucide="film"></i> <span>Adobe Premiere</span></div>
+                            <div class="skill-item"><i data-lucide="file-spreadsheet"></i> <span>Excel</span></div>
+                            <div class="skill-item"><i data-lucide="file-text"></i> <span>Word</span></div>
+                            <div class="skill-item"><i data-lucide="presentation"></i> <span>PowerPoint</span></div>
+                            <div class="skill-item"><i data-lucide="box"></i> <span>Microsoft 365</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certificates & Experience Timeline -->
+        <section id="certificates" class="section timeline-section">
+            <div class="container">
+                <div class="timeline-header">
+                    <h2 class="section-title pixel-font" data-i18n="section.certificates">Certificates & Journey</h2>
+                    <p class="timeline-subtitle" data-i18n="certificates.subtitle1">I've been learning and building projects throughout my BSIT journey.</p>
+                    <p class="timeline-subtitle" data-i18n="certificates.subtitle2">Here's a timeline of my certifications and achievements.</p>
+                </div>
+
+                <div class="timeline-container">
+                    <!-- Timeline Entry 1 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024 - Present</div>
+                            <div class="timeline-description">
+                                <p>Currently pursuing Bachelor of Science in Information Technology (BSIT) - 3rd Year. Focusing on web development, mobile development, automation, and hardware integration.</p>
+                            </div>
+                            <div class="timeline-cards">
+                                <div class="timeline-card">
+                                    <div class="card-icon"><i data-lucide="graduation-cap"></i></div>
+                                    <h4>BSIT 3rd Year</h4>
+                                    <p>Bachelor of Science in Information Technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Entry 2 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2024</div>
+                            <div class="timeline-description">
+                                <p>Completed Cisco NetAcad courses and obtained certification in cybersecurity and networking fundamentals.</p>
+                            </div>
+                            <div class="timeline-cards">
+                                <div class="timeline-card">
+                                    <div class="card-icon"><i data-lucide="shield-check"></i></div>
+                                    <h4>Cisco NetAcad</h4>
+                                    <p>Cybersecurity & Networking Certificate</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Timeline Entry 3 -->
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-date">2023</div>
+                            <div class="timeline-description">
+                                <p>Earned National Certificate II in Computer System Servicing (NC II CSS), demonstrating proficiency in computer hardware and system maintenance.</p>
+                            </div>
+                            <div class="timeline-cards">
+                                <div class="timeline-card">
+                                    <div class="card-icon"><i data-lucide="cpu"></i></div>
+                                    <h4>NC II CSS</h4>
+                                    <p>Computer System Servicing National Certificate II</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title pixel-font" data-i18n="section.projects">Projects <span class="count">(3)</span></h2>
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <a href="https://github.com/4urie/laravel-chatify" target="_blank" class="project-card">
+                        <div class="project-image">
+                            <img src="chatify.png" alt="Laravel Chatify Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Laravel Chatify</h3>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                            <p class="project-desc">A real-time chat messaging system built with Laravel + Chatify for learning socket-based chat applications with a clean workflow.</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel</span>
+                                <span class="tag">WebSocket</span>
+                                <span class="tag">Real-time</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 2 -->
+                    <a href="https://github.com/4urie/laravel-pos" target="_blank" class="project-card">
+                        <div class="project-image">
+                            <img src="pos.png" alt="Laravel POS System Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Laravel Point of Sale System</h3>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                            <p class="project-desc">A comprehensive Point of Sale (POS) management system with advanced features including invoice generation, inventory management, and reporting capabilities. Built with Laravel 10, MySQL, Tailwind CSS, and Alpine.js.</p>
+                            <div class="project-tags">
+                                <span class="tag">Laravel 10</span>
+                                <span class="tag">MySQL</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Alpine.js</span>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Project 3 -->
+                    <a href="https://github.com/4urie/Django-React-Oauth" target="_blank" class="project-card">
+                        <div class="project-image">
+                            <img src="react.png" alt="Django React OAuth Screenshot">
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h3 class="project-title">Django REST API + React Frontend</h3>
+                                <i data-lucide="arrow-up-right"></i>
+                            </div>
+                            <p class="project-desc">A modern full-stack web application featuring a Django REST API backend with OAuth authentication and a beautiful React frontend with dark theme and animations.</p>
+                            <div class="project-tags">
+                                <span class="tag">Django</span>
+                                <span class="tag">React</span>
+                                <span class="tag">OAuth</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog / Articles Section -->
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title pixel-font" data-i18n="section.blog">Blog & Articles <span class="count">(3)</span></h2>
+                <div class="blog-grid">
+                    <!-- Article 1 -->
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="blog-date">Jan 2025</span>
+                            <span class="blog-read-time">5 min read</span>
+                        </div>
+                        <h3 class="blog-title">5 AI Tools That Cut My Editing Time in Half</h3>
+                        <p class="blog-excerpt">Discover the AI-powered tools I use daily to automate repetitive video editing tasks and boost productivity.</p>
+                        <div class="blog-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Video Editing</span>
+                            <span class="tag">Productivity</span>
+                        </div>
+                        <a href="#" class="blog-link">
+                            <span>Read Article</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="blog-date">Dec 2024</span>
+                            <span class="blog-read-time">7 min read</span>
+                        </div>
+                        <h3 class="blog-title">Automating Social Media Posts with n8n</h3>
+                        <p class="blog-excerpt">A complete guide to building automated workflows that schedule and publish content across multiple platforms.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Automation</span>
+                            <span class="tag">n8n</span>
+                            <span class="tag">Social Media</span>
+                        </div>
+                        <a href="#" class="blog-link">
+                            <span>Read Article</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </article>
+
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <div class="blog-meta">
+                            <span class="blog-date">Nov 2024</span>
+                            <span class="blog-read-time">6 min read</span>
+                        </div>
+                        <h3 class="blog-title">My Video Editing Workflow in 2025</h3>
+                        <p class="blog-excerpt">Behind the scenes of my complete video production process, from planning to final export and optimization.</p>
+                        <div class="blog-tags">
+                            <span class="tag">Workflow</span>
+                            <span class="tag">CapCut</span>
+                            <span class="tag">Tutorial</span>
+                        </div>
+                        <a href="#" class="blog-link">
+                            <span>Read Article</span>
+                            <i data-lucide="arrow-right"></i>
+                        </a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact / Footer -->
+        <footer id="contact">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-info">
+                        <p class="pixel-font footer-logo">4URIE</p>
+                        <p class="footer-text" data-i18n="footer.text">Built by 4urie. The source code is available on GitHub.</p>
+                    </div>
+                    <div class="footer-links">
+                        <a href="https://github.com/4urie" target="_blank" class="footer-link">
+                            <i data-lucide="github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.facebook.com/4urie" target="_blank" class="footer-link">
+                            <i data-lucide="facebook"></i>
+                            <span>Facebook</span>
+                        </a>
+                        <a href="mailto:nellasaurie5@gmail.com" class="footer-link">
+                            <i data-lucide="mail"></i>
+                            <span>Email</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="copyright">
+                    &copy; 2025 4urie. All rights reserved.
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
